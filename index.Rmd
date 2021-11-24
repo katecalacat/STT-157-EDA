@@ -1,0 +1,19 @@
+---
+title: "Clause Boundary Detection using Conditional Random Fields"
+author: "Kate Ingrid Calacat"
+date: "`r Sys.time()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook: default
+bibliography: ["myRef.bib"]
+biblio-style: "apalike"
+link-citations: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract {-}
+
+This is paper will study about Conditional Random Fields.

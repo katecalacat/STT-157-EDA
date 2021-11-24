@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Methodology | Clause Boundary Detection using Conditional Random Fields</title>
+  <meta name="description" content="3 Methodology | Clause Boundary Detection using Conditional Random Fields" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Methodology | Clause Boundary Detection using Conditional Random Fields" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Methodology | Clause Boundary Detection using Conditional Random Fields" />
+  
+  
+  
+
+<meta name="author" content="Kate Ingrid Calacat" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="review-of-related-literature.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="review-of-related-literature.html"><a href="review-of-related-literature.html"><i class="fa fa-check"></i><b>2</b> Review of Related Literature</a></li>
+<li class="chapter" data-level="3" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>3</b> Methodology</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Clause Boundary Detection using Conditional Random Fields</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="methodology" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Methodology</h1>
+<p>This is my methodology.</p>
+<p>According to <span class="citation">(<a href="#ref-battig1969category" role="doc-biblioref">Battig and Montague 1969</a>)</span></p>
+<p>Lorem ipsum dolor sit amet, maximus, sagittis lectus, odio nulla. Ac non. Sit felis nec, turpis. Condimentum nibh sagittis in. Euismod, in, quam efficitur porta. Viverra varius sodales volutpat. Faucibus ac pharetra hendrerit mi, aenean in nisi. Aliquam arcu placerat est consectetur faucibus leo id dapibus eget. Ut, sed nam dui, congue sed, tristique metus cum eros nec accumsan. Interdum vestibulum nulla, in ullamcorper arcu malesuada phasellus quis semper aptent ligula. Vitae habitant primis velit ac diam. Vehicula habitant eget amet sed in rutrum vitae fusce. Sed nunc pellentesque primis conubia, habitant, volutpat sagittis, mattis, ut luctus. Ultrices egestas id consequat feugiat lorem sit felis orci. Vestibulum facilisis vel quam, purus lacinia feugiat ipsum. Curabitur sed ipsum sem amet ante nec eu ac aptent.</p>
+<p>Lorem ipsum dolor sit amet, rhoncus maecenas rhoncus phasellus mauris gravida curae eget. Diam nulla nullam pellentesque sed nisi condimentum in nulla ac potenti. Dolor eget praesent erat orci nascetur dolor nec, massa sed habitant sagittis. At viverra sociosqu varius, tempor curabitur curabitur lacinia dui. Vitae dictum et amet nec nec eu aliquam. Vel varius vitae tortor porta vel lacinia efficitur. Faucibus vel eu non nibh consectetur ligula leo. In platea ut auctor eget, ridiculus consequat lorem fusce, iaculis. Sit et sodales a ac. Interdum per vitae. Libero nunc. Himenaeos platea eu amet vitae aenean erat dignissim non donec vestibulum. Donec in varius et et fermentum, nec. Sed vestibulum sagittis eget nullam, ultricies non vestibulum nibh aliquet quisque.</p>
+<p>Lorem ipsum dolor sit amet, erat, massa volutpat vestibulum class aliquam. At ac blandit, vestibulum felis. Nec, in sed nec in vitae vel sapien nibh ut. Integer quis eleifend a, diam nec purus eleifend semper elit, est neque. Malesuada torquent ullamcorper non lacinia aliquet, elit elit non egestas, volutpat vulputate. Etiam fusce adipiscing ante velit eros nunc laoreet vulputate platea velit. Fames dapibus vitae non etiam mollis. Donec efficitur a sed consequat. Pellentesque eleifend eu enim libero vitae commodo nisl amet consectetur. Amet nisl cubilia imperdiet himenaeos luctus. Faucibus in at nullam rhoncus amet, sed accumsan. Litora molestie, elit posuere tempus in ut tortor morbi enim.</p>
+<p>Lorem ipsum dolor sit amet, morbi, lorem in, sit, massa nisi sem et amet praesent. Non nullam, feugiat in luctus eget. Cras penatibus lobortis, sed ornare quam dolor. Netus, metus sit ut non erat dui. Curae taciti ligula risus diam? Donec at augue vestibulum amet conubia. Eleifend aptent rhoncus, at quam libero sed purus. Tincidunt lorem pellentesque urna sit lorem gravida ante turpis non. Aenean primis ac tincidunt? Ante, sit dolor diam fames iaculis. Non non maecenas. Taciti sit et non dolor blandit ut, donec gravida. Tempus eleifend fringilla, scelerisque habitant feugiat nunc. Sed nulla vestibulum orci. Elit ut morbi eros congue vitae curae et vehicula risus nam donec. Sed himenaeos feugiat, quis vel scelerisque risus natoque non.</p>
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Battig, William F, and William E Montague. 1969. <span>“Category Norms of Verbal Items in 56 Categories a Replication and Extension of the Connecticut Category Norms.”</span> <em>Journal of Experimental Psychology</em> 80 (3p2): 1.
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-battig1969category" class="csl-entry">
+Battig, William F, and William E Montague. 1969. <span>“Category Norms of Verbal Items in 56 Categories a Replication and Extension of the Connecticut Category Norms.”</span> <em>Journal of Experimental Psychology</em> 80 (3p2): 1.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="review-of-related-literature.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
